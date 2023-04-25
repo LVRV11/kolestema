@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import { Button } from './Button';
 import { HiBan, HiAtSymbol, HiArchive } from 'react-icons/hi';
 import { Box } from './Box';
-
+import { AppBar } from './AppBar';
 
 const Text = styled.p`
 color: ${props => props.theme.colors.text};
@@ -15,7 +15,16 @@ padding-bottom: ${p => p.theme.space[3]}px;
 
 const App = () => {
 return (
-<Box bg='tomato' color='text'>
+<Box 
+bg='tomato' 
+color='text' 
+pt={3} 
+width='70%' 
+display='flex' 
+alignItems='centr'
+position='relative'
+as='main'>
+    <AppBar/>
     <Text>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
     </Text>
